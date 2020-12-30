@@ -24,9 +24,6 @@ ul {
 a {
   text-decoration: unset; }
 
-button, input, textarea {
-  font-family: 'Roboto', sans-serif; }
-
 button {
   cursor: pointer;
   border: unset; }
@@ -49,7 +46,6 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 100vh;
-  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 1.5em;
   background: #fff;
@@ -70,11 +66,7 @@ button {
   padding: 0 30px;
   margin: 0 auto; }
 
-h1, h4 {
-  font-family: 'RobotoSlab', sans-serif; }
-
 h2.title {
-  font-family: 'RobotoSlab', sans-serif;
   font-size: 2.6em;
   line-height: 1.5em;
   text-align: center; }
@@ -367,39 +359,6 @@ section.about {
   padding: 40px 0; }
 
 /* ---------- about - close ---------- */
-/* ---------- features - open ---------- */
-.features {
-  padding: 80px 0 60px; }
-  .features h2 {
-    margin: 20px 0 30px; }
-  .features__cont {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
-  .features__block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: calc(100% / 3);
-    padding: 70px 15px 30px;
-    text-align: center; }
-  .features__img {
-    height: 62px;
-    -o-object-fit: contain;
-    object-fit: contain; }
-  .features h4 {
-    margin: 30px 0 15px; }
-
-.text--16 {
-  font-size: 16px; }
-
-/* ---------- features - close ---------- */
 /* ---------- contactus - open ---------- */
 .contactus {
   background: #101010;
@@ -600,7 +559,6 @@ main {
 .text-wrap h6 {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: 'Roboto', sans-serif;
   line-height: 1.55em;
 }
 .text-wrap p {
@@ -671,6 +629,39 @@ main {
   width: 100%;
 }
 
+.page404, .page404-back a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+}
+
+.page404 img {
+  margin-top: 50px;
+  max-width: 400px;
+}
+
+.page404-back img {
+  margin-top: -3px;
+}
+
+.page404-back a {
+  margin-top: -100px;
+  margin-bottom: 100px;
+  color: #2c2525;
+  text-decoration: none;
+}
+
+.page404-back a:hover {
+  color: #ff747c;
+}
+
+.arrow {
+  display: flex;
+  margin: 0 26px;
+  min-width: 12px;
+}
+
 
 @media (hover: hover) {
   footer a:hover:after {
@@ -736,21 +727,8 @@ main {
     max-width: 80%;
     padding: 0; } }
 
-@media screen and (min-width: 681px) and (max-width: 991px) {
-  .features__block {
-    width: calc(100% / 2); } }
-
 @media screen and (max-width: 767px) {
   .hero-slider h2, h1 {
     font-size: 3em; }
   h2.title {
     font-size: 30px; } }
-
-@media screen and (max-width: 680px) {
-  .features__cont {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-  .features__block {
-    max-width: 390px;
-    width: 100%; } }
